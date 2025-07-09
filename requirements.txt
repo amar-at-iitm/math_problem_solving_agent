@@ -1,0 +1,10 @@
+# Core libraries
+sympy
+openai
+
+# API server
+fastapi
+uvicorn[standard] # The [standard] part includes websocket and other support
+
+# Utilities
+python-dotenv # For loading environment variables from a .env file
