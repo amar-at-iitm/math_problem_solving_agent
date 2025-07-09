@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ALG-001",
+    "category": "Algebra",
+    "problem": "Expand the expression (x + y)^2.",
+    "ground_truth": "x**2 + 2*x*y + y**2"
+  },
+  {
+    "id": "CALC-001",
+    "category": "Derivatives",
+    "problem": "Find the derivative of x**4 + 3*x**2 with respect to x.",
+    "ground_truth": "4*x**3 + 6*x"
+  },
+  {
+    "id": "CALC-002",
+    "category": "Integrals",
+    "problem": "Calculate the integral of cos(x) with respect to x.",
+    "ground_truth": "sin(x)"
+  },
+  {
+    "id": "CALC-003",
+    "category": "Limits",
+    "problem": "Evaluate the limit of sin(x)/x as x approaches 0.",
+    "ground_truth": "1"
+  }
+]
