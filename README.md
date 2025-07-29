@@ -28,7 +28,7 @@ The agent must explicitly flag any step it cannot symbolically verify, suggestin
 
 -----
 
-## Architecture
+<!-- ## Architecture
 
 The agent operates using a two-stage flow designed to separate reasoning from verification.
 
@@ -42,25 +42,25 @@ This entire process is orchestrated by an agent that manages the flow and compil
 
 ```mermaid
 graph TD
-    A[Start: User submits problem text] --> B{Agent Orchestrator};
-    B --> C[Stage A: LLM generates structured solution steps (JSON)];
-    C --> D{Verifier Module};
-    D --> E[For each step, run SymPy check];
-    E --> F{Verification Result};
-    F --> G[Annotate Step: Verified / Unverified];
-    G --> B;
-    B --> H[Compile Final Outputs];
-    H --> I[1. LaTeX Document];
-    H --> J[2. Verification Log];
-    H --> K[3. Jupyter Notebook (Optional)];
+    A[Start: User submits problem text] -> B{Agent Orchestrator};
+    B -> C[Stage A: LLM generates structured solution steps (JSON)];
+    C -> D{Verifier Module};
+    D -> E[For each step, run SymPy check];
+    E -> F{Verification Result};
+    F -> G[Annotate Step: Verified / Unverified];
+    G -> B;
+    B -> H[Compile Final Outputs];
+    H -> I[1. LaTeX Document];
+    H -> J[2. Verification Log];
+    H -> K[3. Jupyter Notebook (Optional)];
 ```
 
------
+----- -->
 
 ## Project Structure
 
 ```
-/math-agent/
+/math_problem_solving_agent/
   README.md
   requirements.txt
   /src
@@ -89,7 +89,7 @@ graph TD
 
     ```bash
     git clone https://github.com/amar-at-iitm/math_problem_solving_agent
-    cd math-agent
+    cd math_problem_solving_agent
     ```
 
 2.  **Create and activate a virtual environment (recommended):**
